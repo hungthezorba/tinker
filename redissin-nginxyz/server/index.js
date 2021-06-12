@@ -7,11 +7,11 @@ const APPID = process.env.APPID;
 
 const publisher = redis.createClient({
 	port: 6379,
-	host: "127.0.0.1",
+	host: "rds",
 });
 const subscriber = redis.createClient({
 	port: 6379,
-	host: "127.0.0.1",
+	host: "rds",
 });
 
 var connections = [];
