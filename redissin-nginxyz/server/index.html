@@ -63,7 +63,10 @@
 		<script src="/socket.io/socket.io.js"></script>
 
 		<script>
-			var socket = io();
+			// Initialize low-level connection
+			var socket = io("http://localhost:8080", {
+				transports: ["websocket"],
+			});
 
 			var messages = document.getElementById("messages");
 			var form = document.getElementById("form");
