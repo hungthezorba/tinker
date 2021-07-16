@@ -6,9 +6,7 @@ const port = process.env.PORT;
 
 app.get("/", async (req, res) => {
 	try {
-		let result = await axios.get(
-			"https://api.covidtracking.com/v1/states/current.json"
-		);
+		let result = await axios.get(process.env.API);
 		return res.json(
 			result
 				? { success: true, result: result.data }

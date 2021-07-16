@@ -13,7 +13,7 @@ services:
         ports:
             - 8080:80
     app1:
-        image: redissin-nginxyz
+        build: redissin-nginxyz
         environment:
             - APPID=1111
             - PORT=3000

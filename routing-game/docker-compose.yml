@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+    nginx:
+        container_name: nginx-proxy
+        image: nginx
+        volumes:
+            - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+
+        ports:
+            - 8080:80
+            - 8081:81
+        depends_on:
+            - api-server
+            - access-server
+
+    api-server:
+        container_name: api-server
+        build:
+            context: ./api-server
+        volumes:
+            - ./api-server:/server
+            - ./docker-env/api-server.env:/server/.env
+        ports:
+            - 3001:3001
+
+    access-server:
+        container_name: access-server
+        build:
+            context: ./access-server
+        volumes:
+            - ./access-server:/server
+            - ./docker-env/access-server.env:/server/.env
+        ports:
+            - 3000:3000
+        depends_on:
+            - api-server
