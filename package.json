@@ -1,0 +1,27 @@
+{
+  "name": "tinker",
+  "version": "1.0.0",
+  "description": "This repo is for tinkering - learning random stuff.",
+  "main": "index.js",
+  "dependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0"
+  },
+  "devDependencies": {
+    "husky": "^7.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungthezorba/tinker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hungthezorba/tinker/issues"
+  },
+  "homepage": "https://github.com/hungthezorba/tinker#readme"
+}
