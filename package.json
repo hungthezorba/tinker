@@ -1,6 +1,6 @@
 {
   "name": "tinker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This repo is for tinkering - learning random stuff.",
   "main": "index.js",
   "dependencies": {

@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/hungthezorba/tinker/compare/v1.0.0...v1.0.1) (2021-09-20)
+
+
+### Bug Fixes
+
+* change commit rules ([a707556](https://github.com/hungthezorba/tinker/commits/a707556c8c65c6e3f7abf4cd042667199ab43c52))
+* commit rules again ([722e747](https://github.com/hungthezorba/tinker/commits/722e747699e4eb7a9f6d27e3bfd52724988aface))
+
 ## 1.0.0 (2021-09-20)
 
 
